@@ -1,0 +1,23 @@
+#loading{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #0009;
+    z-index: 9999;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+	#loading{
+		top: 0px;
+	}
+	.checkout.woocommerce-checkout .col2-set {
+		order: 1 !important;
+	}
+	.checkout.woocommerce-checkout #order_review {
+		order: 2 !important;
+	}
+}
