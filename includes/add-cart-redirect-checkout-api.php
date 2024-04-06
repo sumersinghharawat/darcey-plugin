@@ -30,6 +30,14 @@
     // Check Cart
     WC()->cart = new WC_Cart();
 
+    if (WC()->cart->is_empty()) {
+        // echo 'Cart is empty.';
+    } else {
+        // If cart is not empty, empty the cart
+        WC()->cart->empty_cart();
+        // echo 'Cart has been emptied.';
+    }
+
     //     // _subscription_price =
     //     // _subscription_sign_up_fee =
     //     // _subscription_period_interval = 1 - 6
